@@ -67,18 +67,68 @@
     margin: 30px 0;
 }
 
-.tocreat input {
+.tocreat input[type=text] {
     background: inherit;
     border: 1px solid aliceblue;
     width: 220px;
     line-height: 30px;
     margin-right: 20px;
     padding-left: 20px;
+    color: aliceblue;
 }
 
 .signup input[type=button] {
     background-color: aliceblue;
     width: 100px;
+    border: 1px solid aliceblue;
+    line-height: 30px;
+    margin-right: 20px;
+    padding-left: 20px;
     margin: 0;
     padding: 0;
+}
+
+/* part2部分布局 */
+#sections{
+    width: 900px;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+}
+#sections p:nth-child(1){
+    font-size: 12px;
+}
+
+#sections h2{
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.item-set{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.items{
+    display: flex;/*这里如果不设置flex会出现icon与文字不在同一行上的问题*/
+    flex: none;
+    height: 150px;
+    width: 425px;
+}
+.items .icon{
+    margin-right: 20px;
+}
+
+.item-content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+#sections .item-content p:first-child{
+    font-size: 24px;
+}
+#sections .item-content p:nth-child(2){
+   color: rgba(20, 20, 20, 0.7);
 }
