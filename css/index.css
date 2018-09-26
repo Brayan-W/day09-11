@@ -89,52 +89,60 @@
 }
 
 /* part2部分布局 */
-#sections{
+
+#sections {
     width: 900px;
     margin: 0 auto;
     padding: 60px 0;
     text-align: center;
 }
-#sections p:nth-child(1){
+
+#sections p:nth-child(1) {
     font-size: 12px;
 }
 
-#sections h2{
+#sections h2 {
     width: 500px;
     margin: 0 auto;
     padding: 20px 0;
 }
 
-.item-set{
+.item-set {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 50px;
 }
-.items{
-    display: flex;/*这里如果不设置flex会出现icon与文字不在同一行上的问题*/
+
+.items {
+    display: flex;
+    /*这里如果不设置flex会出现icon与文字不在同一行上的问题*/
     flex: none;
     height: 150px;
     width: 425px;
 }
-.items .icon{
+
+.items .icon {
     margin-right: 20px;
 }
 
-.item-content{
+.item-content {
     display: flex;
     flex-direction: column;
     text-align: left;
 }
-#sections .item-content p:first-child{
+
+#sections .item-content p:first-child {
     font-size: 24px;
 }
-#sections .item-content p:nth-child(2){
-   color: rgba(20, 20, 20, 0.7);
+
+#sections .item-content p:nth-child(2) {
+    color: rgba(20, 20, 20, 0.7);
 }
 
 /* part3部分布局 */
-#policies{
+
+#policies {
     width: 100%;
     background: url(../images/bg2.png) no-repeat;
     background-size: cover;
@@ -146,6 +154,7 @@
     position: relative;
     z-index: 0;
 }
+
 #policies::after {
     content: '';
     display: block;
@@ -158,42 +167,70 @@
     z-index: -1;
 }
 
-#policies .policies-content{
+#policies .policies-content {
     float: left;
     width: 450px;
     height: 100%;
-    margin:0px 50px 0px 200px;
+    margin: 0px 50px 0px 200px;
 }
 
-#policies .policies-content .words{
+#policies .policies-content .words {
     display: flex;
     flex-direction: column;
 }
 
-#policies .policies-content .words p{
+#policies .policies-content .words p {
     flex: none;
     width: 300px;
     padding-bottom: 30px;
 }
-#policies .policies-content .words p:nth-child(1){
+
+#policies .policies-content .words p:nth-child(1) {
     font-size: 32px;
 }
-#policies .policies-content button{
+
+#policies .policies-content button {
     border: 1px solid aliceblue;
     line-height: 40px;
     margin-right: 20px;
-    padding:0 20px; 
+    padding: 0 20px;
 }
-#policies .policies-content button:nth-child(2){
+
+#policies .policies-content button:nth-child(2) {
     background: aliceblue;
     color: #000;
 }
-#policies .policies-content button:nth-child(3){
+
+#policies .policies-content button:nth-child(3) {
     background: inherit;
     color: aliceblue;
 }
 
-#policies .ipad img{
+#policies .ipad img {
     border-top-left-radius: 35px;
     border-bottom-left-radius: 35px;
+}
+
+/* part3布局 */
+#products{
+    text-align: center;
+    margin: 100px auto;
+}
+#products .product-items{
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 100px auto;
+}
+#products .product-items .product-intro{
+    flex: none;
+    width: 250px;
+}
+
+#products .product-items .product-intro p{
+    padding-top: 30px;
+    color: rgba(20, 20, 20, 0.7);
+}
+#products p:nth-child(1){
+    font-size: 40px;
 }
