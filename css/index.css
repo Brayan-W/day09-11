@@ -212,25 +212,134 @@
 }
 
 /* part3布局 */
-#products{
+
+#products {
+    width: 100%;
     text-align: center;
     margin: 100px auto;
+    border-bottom: 1.5px solid rgb(201, 200, 200);
 }
-#products .product-items{
+
+#products .product-items {
     display: flex;
     justify-content: space-between;
     width: 960px;
     margin: 100px auto;
 }
-#products .product-items .product-intro{
+
+#products .product-items .product-intro {
     flex: none;
     width: 250px;
 }
 
-#products .product-items .product-intro p{
+#products .product-items .product-intro p {
     padding-top: 30px;
     color: rgba(20, 20, 20, 0.7);
 }
-#products p:nth-child(1){
+
+#products p:nth-child(1) {
     font-size: 40px;
+}
+
+/* part4布局 */
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    width: 100%;
+    margin: 100px auto;
+    border-bottom: 1.5px solid rgb(201, 200, 200);
+}
+
+#introduction .intro-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+#introduction .intro-items .article {
+    flex: none;
+    width: 350px;
+    margin-top: 50px;
+}
+
+#introduction .intro-items .article p:nth-child(1) {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#introduction .intro-items .article p:nth-child(2) {
+    color: rgba(20, 20, 20, 0.7);
+}
+
+/* crew布局 */
+
+#crew {
+    padding: 0 225px 50px 225px;
+    border-bottom: 1.5px solid rgb(201, 200, 200);
+}
+
+#crew .our-crew p {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#crew .our-crew p:nth-child(1) {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#crew .our-crew p:nth-child(2) {
+    color: rgba(20, 20, 20, 0.7);
+}
+
+#crew .tutors-album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#crew .tutors-album .tutors {
+    margin-top: 50px;
+    position: relative;
+}
+
+#crew .tutors-album .tutors .mask{
+    /* hover蒙版 */
+    position: absolute;
+    /* 用flex来使其垂直水平居中 */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(20, 20, 20, 0.65);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+#crew .tutors-album .tutors .mask .links a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#crew .tutors-album .tutors .mask .links .iconfont{
+    font-size: 50px !important;
+    margin: 15px;
+}
+#crew .tutors-album .tutors .mask p:nth-child(1){
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+#crew .tutors-album .tutors .mask p:nth-child(2){
+    color: rgba(158, 158, 158, 0.7);
+    margin-bottom: 30px;
+}
+#crew .tutors-album .tutors:hover .mask{
+    opacity: 1;
 }
