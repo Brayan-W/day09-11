@@ -347,3 +347,107 @@
 #crew .tutors-album .tutors:hover .mask {
     opacity: 1;
 }
+
+/* contacts部分布局 */
+
+#contacts {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#contacts .to-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    border: 1px  solid rgb(201, 200, 200);
+}
+#contacts .to-contact :nth-child(n){
+    line-height: 30px;
+    margin-top: 20px;
+    width: 250px;
+    padding-left: 10px;
+}
+#contacts .to-contact p{
+    margin-top: 0px !important;
+    text-align: center;
+}
+#contacts .to-contact textarea{
+    resize: none;
+    line-height: 14px;
+}
+#contacts .to-contact button{
+    background-color: black;
+    color: aliceblue;
+    border: none;
+}
+
+#contacts .our-contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+#contacts .our-contacts p{
+    flex: none;
+    width: 350px;
+}
+#contacts .our-contacts p:nth-child(1){
+    font-size: 30px;
+}
+#contacts .our-contacts>p:nth-child(2){
+    color: rgba(20, 20, 20, 0.65);
+}
+#contacts .our-contacts :nth-child(n){
+    margin-bottom: 20px;
+}
+#contacts .our-contacts .ways{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#contacts .our-contacts .ways p{
+    padding-left: 10px;
+}
+
+/* footer布局 */
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: black;
+    color: aliceblue;
+}
+
+#footer .footer-items{
+    margin: 30px 0;
+}
+#footer .footer-items ul{
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+#footer .footer-items ul li{
+    margin-top: 20px;
+}
+
+#footer .footer-items p{
+    color:#575757;
+    margin-top: 20px;
+    
+}
+#footer .footer-items a{
+    text-decoration: none;
+    color:#575757;
+}
+
+#footer .footer-items h3{
+    font-size: 14px;
+}
+#footer .footer-items p+ul{
+    display: flex;
+    justify-content: space-around;
+}
